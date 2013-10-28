@@ -3,15 +3,17 @@ main div.container {
         h1 { font-size:2.5em; line-height:1.2em; margin:0 0 10px 0; letter-spacing:-0.05em; font-weight:600;
             a { color:@cor-preto; }
         }
-        .outstanding-header { border-top:4px solid @cor-module-title-padrao; background:@cor-module-title-bkg-padrao; height:57px; margin:0 0 22px 0 }
-        .outstanding-title { line-height:1em; margin:11px 8px 14px 8px; font-size:1.45em; font-weight:400; color: @cor-module-title-padrao  }
+        .outstanding-header { border-top:4px solid @cor-module-title-padrao; background:@cor-module-title-bkg-padrao; height:57px; margin:0 0 22px 0; position:relative;
+            a.outstanding-link { position:absolute; right:3px; bottom:8px; }
+        }
+        .outstanding-title { line-height:1em; margin:11px 8px 14px 8px; font-size:1.45em; font-weight:400; color: @cor-module-title-padrao;  }
         .subtitle { text-transform:uppercase; font-weight:400; color: @cor-module-subtitle-padrao; font-size:0.9em; line-height:1em; margin:0 0 10px 0 }
         p { font-size:0.9em; line-height:1.35em }
         h2, h3 { font-size:1.1em; line-height:1em; margin-bottom:5px; font-weight:400;
             a { color:@cor-module-header-links }
         }
         .span4 .img-rounded { .rounded-corners(8px) !important; display:block; width:230px; height:136px; overflow:hidden; margin-bottom:10px; }
-        .outstanding-footer { border-top:2px solid @cor-module-title-padrao; background:@cor-module-title-bkg-padrao; height:22px; margin:26px 0 0 0; padding:10px; }
+        .outstanding-footer { border-top:2px solid @cor-module-title-padrao; background:@cor-module-title-bkg-padrao; height:22px; margin:26px 0 0 0; padding:10px; clear:both; }
         a.outstanding-link { font-size:0.7em; color:@cor-module-outstanding-link-padrao; text-transform:uppercase; line-height:1em; float:right; margin-right:7px;
             .text { display:block; padding:5px; float:left; }
             .icon-box {  display:block; float:right; width:12px; height:16px; padding:0px 4px 4px 6px; .rounded-corners(2px); .linear-gradient( @cor-module-title-padrao, lighten(@cor-module-title-padrao, 10%), darken(@cor-module-title-padrao, 10%) ); text-align:center;      }
@@ -90,4 +92,15 @@ main div.container {
         .twitter-content { min-height:350px; }
      }
      .module-box-01-top-adjust { margin-top:29px; }
+}
+//formatacoes especificas joomla
+#system-message-container {
+   margin-bottom:10px;
+    dl, ul, li { margin:0 !important; }
+    dd { margin:0 0 10px 0 !important; padding:10px; text-align:center; }
+    li { display:block; padding:4px 4px 0 4px; }
+    dt { display:none !important; }
+    dd.message { background:@cor-module-title-padrao; color:@cor-branco; }
+    dd.notice { background:@cor-cinza-escuro !important; color:@cor-branco; }
+    dd.error { background:@cor-module-title-variacao-02 !important; color:@cor-branco; border:none !important; }
 }
