@@ -32,6 +32,16 @@ h2.h2interna            { font-size: 1.6em !important; font-weight: 700 !importa
 
 .descricao-internas    {color: #666 !important; margin-left: 0 !important; font: bold 1.18em "Helvetica Neue", Arial, FreeSans, sans-serif !important; margin-bottom: 35px;}
 
+h1.h1interna-linha { border-color: #D9DBDA; border-style: none none solid; border-width: 0 0 1px; color: #2C66CE !important;
+    font-family: "open_sansbold",Arial,Helvetica,sans-serif; font-size: 2.0em !important; font-weight: normal;
+    line-height: 1em; margin: 0.85em 0 5px; padding: 0 0 0.7em; text-transform: uppercase;}
+
+.container-interno {
+    padding: 20px 0 65px !important;
+}
+#breadcrumbs-current { font-size: 0.72em !important; text-transform: uppercase !important; margin: -0px 0 20px 4px !important; display: block !important; color: #2C66CE !important;}
+#breadcrumbs-current a {color: #2C66CE !important;}
+#breadcrumbs-current a:hover {text-decoration: underline !important;}
 /* Categorias ao Final do texto - Padrão para todas as Páginas  */
 
 #categoria:first-child {margin-top: 2.5em;
@@ -39,32 +49,18 @@ padding-top: 1em;
 border-top: 4px solid #172937;}
 
 #categoria {
-display: block;
-margin: 0;
-padding: 1em 0;
-border-bottom: 1px solid #8b949b;
-color: #3a70d1;
-text-align: left;
-font-size: 0.8em;
-font-family: Arial, Helvetica, sans-serif;}
+display: block; margin: 0; padding: 1em 0; border-bottom: 1px solid #8b949b; color: #3a70d1;
+text-align: left; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif;}
 
 #categoria a.link-categoria, #categoria span.selectedTag, {
-margin: 0;
-padding: 4px 9px;
-border: 1px solid #dadada;
-border-radius: 3px;
-background-color: #e9e8ed;
-color: #3a70d1;}
+margin: 0; padding: 4px 9px; border: 1px solid #dadada;
+border-radius: 3px; background-color: #e9e8ed; color: #3a70d1;}
 
 #categoria span,{
-display: inline-block;
-margin-left: 5px;
-line-height: 30px;}
+display: inline-block; margin-left: 5px; line-height: 30px;}
 
 #categoria a.link-categoria:hover {
-background: none repeat scroll 0 0 #205C90;
-border-color: #205C90;
-color: #FFFFFF;}
+background: none repeat scroll 0 0 #205C90; border-color: #205C90; color: #FFFFFF;}
 
 
 /* Notícias    ( Parte Interna de noticias)           */
@@ -72,31 +68,23 @@ color: #FFFFFF;}
 .subtitulo { border-bottom: 1px solid #D7DCD8; color: #172938;  font-family: Arial,Helvetica,sans-serif; font-size: 1.2em; font-weight: normal; margin-top: 1.2em; padding-bottom: 1.539em; margin-bottom: 1.7em}
 
 /* Notícia  Caixa Lateral */
-.lateralquote {
-    float: right;
-    clear: right;
-    border-bottom: 1px solid #79838C;
-    border-top: 4px solid #172937;
-    border-left: none !important;
-    color: #9FA9B3;
-    font-size: 1.4em;
-    font-weight: bold;
-    letter-spacing: -0.03em !important;
-    line-height: 1.25em;
-    margin: 0 1em 0.5em 0.5em;
-    width: 35%;
-    padding: 1em 0 !important;
+.lateralquote { float: right; clear: right; border-bottom: 1px solid #79838C; border-top: 4px solid #172937;
+                border-left: none !important; color: #9FA9B3; font-size: 1.4em; font-weight: bold;  letter-spacing: -0.03em !important;
+                line-height: 1.25em; margin: 0 1em 0.5em 0.5em; width: 35%; padding: 1em 0 !important;
 }
 
 /*   Interna -  Lista de Todas as notícias    */
 
-#content .tileItem { border-bottom: 1px solid #D7DBDA; clear: both; font-size: 1em;
-    margin: 0; overflow: hidden; padding: 2em 0 2em 7.5em; position: relative;
+#content div.documentByLine {  /* Descrição abaico do titulo */
+                        color: #666666; display: block; font-size: 0.76em;
 }
 
-#content .tileContent {
-    border-left: 1px dotted #D6D6D6; min-height: 75px;
-    overflow: hidden;  padding-left: 1.8em;
+#content .tileItem { border-bottom: 1px solid #D7DBDA; clear: both; font-size: 1em;
+                     margin: 0; overflow: hidden; padding: 2em 0 2em 7.5em; position: relative;
+}
+
+#content .tileContent { border-left: 1px dotted #D6D6D6; min-height: 75px;
+                        overflow: hidden;  padding-left: 1.8em;
 }
 
 #content .tileItem .documentByLine {  /*  Informações da esquerda do quadro da notícia */
@@ -143,8 +131,6 @@ color: #FFFFFF;}
 #content .tileImage { float: none; margin: 0 1em 0.5em 0;}
 #content .tileImage img { float: left;}
 .portlet img, #content img {border-radius: 5px 5px 5px 5px; max-width: 100%;}
-
-
 
 
 
