@@ -67,8 +67,9 @@ function init() {
 	//classes de layout
 	jQuery('div.layout').addClass( jQuery.cookie('layout_classes') );
 	browser_adjusts();
-	jQuery('#gallery-carousel').carousel();
+	jQuery('.gallery-pane .carousel').carousel();
 	resize();
+	module_box_adjust(null);
 }
 
 function resize() {
@@ -99,6 +100,9 @@ function resize() {
 
 		if( ! jQuery('#em-destaque').is(':visible') )
 			jQuery('#em-destaque').fadeIn();
+
+		module_box_adjust('auto');
+		module_box_adjust(null);
 	}	
 	else
 	{
@@ -109,6 +113,7 @@ function resize() {
 			jQuery('#navigation h2').next().show();				
 			jQuery('#navigation-section').fadeIn();
 			jQuery('#em-destaque').fadeIn();
+			module_box_adjust(null);
 		}
 	}
 	//fim ajustes responsividade
@@ -127,3 +132,19 @@ function browser_adjusts() {
 	}
 }
 // fim ajustes de navegador
+
+//ajustes de tamanho dos itens para .module-box-01
+function module_box_adjust( val ) {
+	jQuery('.module-box-01 .lista li').each(function(key){
+		if(val == null) {
+			if(key==0) max_height = 0;
+			if(key==0) size = jQuery(this).size();
+			padding_vertical = 8;
+			if(jQuery(this).height() > max_height) max_height = jQuery(this).height() + padding_vertical;
+			if(key+1 == size) jQuery('.module-box-01 .lista li').height( max_height );			
+		}
+		else
+			jQuery('.module-box-01 .lista li').height( val );
+	});
+}
+//fim ajustes de tamanho dos itens para .module-box-01
