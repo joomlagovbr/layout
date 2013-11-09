@@ -1,36 +1,63 @@
-.interna-01 {
+main div.rastro-navegacao {
+    margin-left:7px; height:35px; font-size:0.75em; text-transform: uppercase; color:@cor-menudeapoio-links;
+    a {
+        &:hover { text-decoration: underline; }
+    }
+}
+
+#content.internas-1 {
+    color:@cor-preto-conteudo;
+    // h1, .documentFirstHeading {
+    //     color: #1A2A39; 
+    //     font-size: 2.5em;
+    //     margin: 15px 0;
+    //     padding-bottom: 0.4em;
+    //     text-transform: none;
+    //     letter-spacing:-1px;
+    // }
     h1, .documentFirstHeading {
-        color: #1A2A39; 
-        font-size: 2.5em;
-        margin: 15px 0;
-        padding-bottom: 0.4em;
-        text-transform: none;
-        letter-spacing:-1px;
+        color: @cor-first-heading; font-size: 2.7em; margin: 0 0 18px 0; text-transform: none; letter-spacing:-1px;
+        a { color:@cor-preto }
     }
-    .documentByLine {
-        color:@cor-cinza-escuro; font-size:0.8em; margin-bottom:20px;
+    
+    // h2.h2interna            { font-size: 1.6em !important; font-weight: 700 !important; margin-bottom: 0.8em !important; margin-top: 0.8em !important;}
+    h2, h3, h4, h5, h6 { font-size: 1.6em; font-weight: 700; margin-bottom: 0.8em; margin-top: 0.8em; }
+
+    .content-header-options-01 {  
+        margin-bottom:30px;      
+        .documentByLine {
+            color:@cor-cinza-conteudo; font-size:0.75em; border-right:1px dotted lighten(@cor-cinza-conteudo, 20%);
+        }
+        span strong { font-weight:normal }
+        .btns-social-like { padding-top:8px }
+        .btns-social-like .twitter, .btns-social-like .facebook { display:block; width:107px; height:30px; overflow:hidden }
+        .btns-social-like .googleplus { display:block; width:80px; height:30px; overflow:hidden }
     }
-    strong.description {
-        display:block; font-size:1.1em; margin:12px 0; color:@cor-cinza-escuro;
+
+    // strong.description {
+    //     display:block; font-size:1.1em; margin:12px 0; color:@cor-cinza-escuro;
+    // }
+    // .description    {color: @cor-cinza-escuro; margin-left: 0 !important; font: bold 1.18em "Helvetica Neue", Arial, FreeSans, sans-serif !important; margin-bottom: 35px;}
+    .description {
+        display:block; font-size:1.1em; margin:0 0 35px 0; color:@cor-cinza-conteudo; line-height: 1.3em; font-weight:bold; font-size: 1.18em;
+        p { line-height: 1.3em !important; }
     }
-    //estilos gerais
-    p { line-height: 1.8em; }
-    ul, ul li { list-style-type:disc !important; display:block; }
-    ol { list-style:outside decimal !important;}
-    ul li { line-height: 1.5em !important; display:block;}
-    ol li { line-height: 1.5em !important; display:block;}
+    
+    p { font-size: 1.0em !important; line-height: 1.7em }
+    
+    /* Internas   */
+    // li.bullet-internas      { display: list-item !important; list-style: square outside !important; line-height: 1.5em !important; font-size: 0.83em; margin-bottom: 0.25em;}
+    ul li { display: list-item !important; list-style: square outside !important; line-height: 1.5em !important; font-size: 0.9em; margin-bottom: 0.25em; }
+
+    // li.numeros-internas      { display: list-item !important; list-style: decimal outside !important; line-height: 1.5em !important; font-size: 1.0em; margin-bottom: 0.25em;}
+    ol li { display: list-item !important; list-style: decimal outside !important; line-height: 1.5em !important; font-size: 0.9em; margin-bottom: 0.25em; }
+    
 }
 
 
-/* Internas   */
 
-li.bullet-internas      { display: list-item !important; list-style: square outside !important; line-height: 1.5em !important; font-size: 0.83em; margin-bottom: 0.25em;}
-li.numeros-internas      { display: list-item !important; list-style: decimal outside !important; line-height: 1.5em !important; font-size: 1.0em; margin-bottom: 0.25em;}
-h1.h1interna            { font-weight: 700 !important;}
-h2.h2interna            { font-size: 1.6em !important; font-weight: 700 !important; margin-bottom: 0.8em !important; margin-top: 0.8em !important;}
-.texto-internas  p       {font-size: 1.0em !important; line-height: 1.7em !important;}
 
-.descricao-internas    {color: #666 !important; margin-left: 0 !important; font: bold 1.18em "Helvetica Neue", Arial, FreeSans, sans-serif !important; margin-bottom: 35px;}
+
 
 h1.h1interna-linha { border-color: #D9DBDA; border-style: none none solid; border-width: 0 0 1px; color: #2C66CE !important;
     font-family: "open_sansbold",Arial,Helvetica,sans-serif; font-size: 2.0em !important; font-weight: normal;

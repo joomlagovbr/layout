@@ -66,10 +66,21 @@ jQuery(window).resize(function(){
 function init() {
 	//classes de layout
 	jQuery('div.layout').addClass( jQuery.cookie('layout_classes') );
+	
+	//ajustes conforme navegador
 	browser_adjusts();
+	
+	//inicializacao de carrossel, pagina inicial
 	jQuery('.gallery-pane .carousel').carousel();
+
+	//resize para responsividade
 	resize();
+
+	//ajuste de caixas de modulos do tipo module_box
 	module_box_adjust(null);
+
+	//paginas internas:
+	delaySocialItems();
 }
 
 function resize() {
@@ -148,3 +159,17 @@ function module_box_adjust( val ) {
 	});
 }
 //fim ajustes de tamanho dos itens para .module-box-01
+
+//aparecimento de icones de redes sociais, paginas internas
+function delaySocialItems()
+{
+	if(jQuery('.btns-social-like').hasClass('hide'))
+	{
+		jQuery('.btns-social-like').each(function(){
+		    jQuery(this).hide();
+		    jQuery(this).removeClass('hide');
+		    jQuery(this).fadeIn(6000);
+		});	
+	}
+}
+//fim aparecimento de icones de redes sociais, paginas internas
