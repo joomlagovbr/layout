@@ -9,7 +9,7 @@ main div.container {
         .outstanding-title { line-height:1em; margin:11px 8px 14px 8px; font-size:1.45em; font-weight:400; color: @cor-module-title-padrao;  }
         .subtitle { text-transform:uppercase; font-weight:400; color: @cor-module-subtitle-padrao; font-size:0.9em; line-height:1em; margin:0 0 10px 0 }
         p { font-size:0.9em; line-height:1.35em }
-        h2, h3 { font-size:1.1em; line-height:1em; margin-bottom:5px; font-weight:400;
+        h2, h3 { font-size:1.1em; line-height:1em; margin-bottom:5px; font-family:@font-family; font-weight:400;
             a { color:@cor-module-header-links }
         }
         .img-rounded { .rounded-corners(8px) !important; display:block; width:230px; height:136px; overflow:hidden; margin-bottom:10px; }
@@ -53,7 +53,7 @@ main div.container {
         @border-color:darken(@cor-cinza-medio, 15%);
         padding-bottom:0; background:@cor-cinza-claro; border:1px solid @border-color; .rounded-corners(8px); margin-bottom:20px !important;
         .header { border-bottom:1px solid @border-color; padding:10px 12px 2px 12px;
-            h2, h3, h4, h4, h6 { text-transform:uppercase; }
+            h2, h3, h4, h4, h6 { text-transform:uppercase; font-family: @font-family-semibold; }
         }
         .lista { margin:0 !important;
             h2, h3, h4, h5, h6 {
@@ -90,7 +90,9 @@ main div.container {
         .pane {
             padding-bottom:0; background:@cor-cinza-claro; border:1px solid @border-color; margin:-1px 0 20px 0 !important; .rounded-corners(0 8px 8px 8px); 
         }
-        .twitter-content { min-height:350px; }
+        .twitter-content { min-height:350px;
+            iframe{ min-height:350px; }
+        }
      }
      .module-box-01-top-adjust { margin-top:29px; }
 }

@@ -20,7 +20,9 @@
 	<!--[if lt IE 10]><link rel="stylesheet" href="css/ie.css" /><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	<!--[if lt IE 8]><link rel="stylesheet" href="css/ie7.css" /><link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css'>
+	<!-- chamada de fontes local --><!-- <link rel="stylesheet" href="css/fontes.css" type='text/css'/>		 -->
+	<!-- chamada de fontes externas --><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="jplayer/skin/portalpadrao01/jplayer.css" type='text/css'/>	
 </head>
 <body>
 	<a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
@@ -38,7 +40,7 @@
     <div class="layout">
     	<header>
     		<div class="container"> 
-	    		<div class="row-fluid">    			   			
+	    		<div class="row-fluid accessibility-language-actions-container">    			   			
 					<div class="span6 accessibility-container">
 						<ul id="accessibility">
 							<li>
@@ -95,7 +97,8 @@
 				<!-- fim .row-fluid -->
 				<div class="row-fluid">
 					<div id="logo" class="span8">
-						<a href="index.html" title="Descrição do Portal Padrão">
+					<!-- <div id="logo" class="span8 big"> <div id="logo" class="span8 small"> -->
+						<a href="index.html" title="Descrição do Portal Padrão">							
 							<span class="portal-title-1">Denominação do órgão</span>
 							<h1 class="portal-title corto">Nome principal</h1>
 							<span class="portal-description">Subordinação</span>
@@ -173,13 +176,13 @@
 		<main> 
     		<div class="container">
 				<div class="row-fluid">
-					<section class="rastro-navegacao">
-						<div class="rastro-navegacao row-flutuante">
-							<a class="pathway" href="index.html">Página inicial</a>
-							<span class="separator"> &gt; </span>
-							<span>Acessibilidade</span>
-						</div>
-					</section>
+	                <section class="rastro-navegacao">
+	                        <div class="rastro-navegacao row-flutuante">
+	                                <a class="pathway" href="index.html">Página inicial</a>
+	                                <span class="separator"> &gt; </span>
+	                                <span>Acessibilidade</span>
+	                        </div>
+	                </section>
 				</div>
 				<!-- fim .row-fluid -->
 				<div class="row-fluid">
@@ -475,7 +478,7 @@
 			<div class="footer-logos">
 				<div class="container">
 					<a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
-					<!-- separador para fins de acessibilidade <--><span class="hide">&nbsp;</span></--><!-- fim separador para fins de acessibilidade -->
+					<!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
 					<a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="images/brasil.png" alt="Brasil - Governo Federal"></a>
 				</div>				
 			</div>

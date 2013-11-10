@@ -20,7 +20,9 @@
 	<!--[if lt IE 10]><link rel="stylesheet" href="css/ie.css" /><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	<!--[if lt IE 8]><link rel="stylesheet" href="css/ie7.css" /><link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css'>
+	<!-- chamada de fontes local --><!-- <link rel="stylesheet" href="css/fontes.css" type='text/css'/>		 -->
+	<!-- chamada de fontes externas --><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="jplayer/skin/portalpadrao01/jplayer.css" type='text/css'/>	
 </head>
 <body>
 	<a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
@@ -38,7 +40,7 @@
     <div class="layout">
     	<header>
     		<div class="container"> 
-	    		<div class="row-fluid">    			   			
+	    		<div class="row-fluid accessibility-language-actions-container">    			   			
 					<div class="span6 accessibility-container">
 						<ul id="accessibility">
 							<li>
@@ -80,7 +82,7 @@
 						</ul>	 -->				
 						<ul id="portal-siteactions" class="pull-right">
 							<li>
-								<a accesskey="5" href="acessibilidade.html">Acessibilidade</a>
+								<a accesskey="5" href="interna-acessibilidade.html">Acessibilidade</a>
 							</li>
 							<li>
 								<a accesskey="6" href="#" class="toggle-contraste">Alto Contraste</a>
@@ -95,7 +97,8 @@
 				<!-- fim .row-fluid -->
 				<div class="row-fluid">
 					<div id="logo" class="span8">
-						<a href="index.html" title="Descrição do Portal Padrão">
+					<!-- <div id="logo" class="span8 big"> <div id="logo" class="span8 small"> -->
+						<a href="index.html" title="Descrição do Portal Padrão">							
 							<span class="portal-title-1">Denominação do órgão</span>
 							<h1 class="portal-title corto">Nome principal</h1>
 							<span class="portal-description">Subordinação</span>
@@ -147,7 +150,7 @@
 						<h2 class="hide">Serviços</h2>
 						<ul>
 							<li class="portalservicos-item">
-								<a title="Perguntas frequentes" href="#">Perguntas frequentes</a>
+								<a title="Perguntas frequentes" href="interna-perguntas-frequentes.html">Perguntas frequentes</a>
 							</li>
 							<li class="portalservicos-item">
 								<a title="Contato" href="#">Contato</a>
@@ -205,7 +208,7 @@
 							<nav class="menu-de-apoio span9">
 								<h2 class="hide">Temas relevantes</h2>
 								<ul>
-									<li><a href="#" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>									
+									<li><a href="interna-de-noticias.html" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>									
 								</ul>							
 							</nav>
 							<nav class="span9 assuntos">
@@ -256,8 +259,9 @@
 									<li><a href="#" title="Despesas">Despesas</a></li>								
 									<li><a href="#" title="Licitações e Contratos">Licitações e Contratos</a></li>							
 									<li><a href="#" title="Servidores">Servidores</a></li>								
-									<li><a href="#" title="Informações classificadas">Informações classificadas</a></li>
+									<li><a href="interna-informacoes-classificadas.html" title="Informações classificadas">Informações classificadas</a></li>
 									<li><a href="#" title="Serviço de Informação ao Cidadão - SIC">Serviço de Informação ao Cidadão - SIC</a></li>
+									<li><a href="interna-perguntas-frequentes.html" title="Perguntas frequentes">Perguntas frequentes</a></li>
 								</ul>
 							</nav>	
 							<nav class="span9 central-conteudos">
@@ -424,7 +428,7 @@
 			<div class="footer-logos">
 				<div class="container">
 					<a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
-					<!-- separador para fins de acessibilidade <--><span class="hide">&nbsp;</span></--><!-- fim separador para fins de acessibilidade -->
+					<!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
 					<a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="images/brasil.png" alt="Brasil - Governo Federal"></a>
 				</div>				
 			</div>

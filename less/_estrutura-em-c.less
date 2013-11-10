@@ -36,17 +36,17 @@ header {
         a { color:@cor-titulo-principal }
         .portal-title-1 { font-size:0.85em; display:block; height:21px; }
         h1 {
-            font-family: @font-family; font-size:2.9em; line-height:0.8em; font-weight:800; letter-spacing:-1px; margin-bottom:5px;
+            font-family: @font-family-extrabold; font-size:2.75em; line-height:0.8em; font-weight:800; letter-spacing:-1px; margin-bottom:5px;
         }
         .portal-description { font-size:1.1em; text-transform:uppercase; position:relative; top:4px }
     }
     #logo.small {
         margin:13px 0 10px 0; 
-        h1 { font-size:2.4em }
+        h1 { font-size:2.4em; font-family: @font-family-bold; }
     }
     #logo.big {
         margin:10px 0 13px 0; 
-        h1 { font-size:3.6em }        
+        h1 { font-size:3.6em; font-family: @font-family-bold; }        
     }
     #portal-searchbox {
         form { margin:22px 0 0 0 }
@@ -57,7 +57,7 @@ header {
         .searchButton { padding-bottom:4px; padding-right:8px; }
         .searchButton i.icon-search { font-size:1.25em; color:@cor-iconsearch-header; .chrome_antialising (@cor-iconsearch-header; .4px ) }
     }
-    #social-icons { margin:2px 0 2px 0; .opacity(80);
+    #social-icons { margin:2px 0 2px 0; .opacity(85);
         li { margin: 0 0 0 6px }
         a { color:@cor-links-header;
             i { font-size:1.70em; margin-top:5px; .chrome_antialising (@cor-links-header; .4px ) } 
@@ -81,6 +81,7 @@ main {
     .container { padding:48px 0 65px 0 }
     div.row-flutuante { margin-top:-28px }
     .row-fluid { margin-left:0 !important }
+    h2 { font-family: @font-family; }
     #em-destaque {
         display:block; min-height:20px; padding:0; margin-bottom:27px;
         @altura-padding:7px;
@@ -106,7 +107,7 @@ main {
             &:hover { text-decoration:underline }
         }
         nav { display:block; margin-bottom:35px; }
-        nav h2 { border-top:3px solid @cor-nav-titulos; padding:12px 5px 5px 10px; height:32px; background:@cor-cinza-claro; text-transform:uppercase; font-size:0.8em; line-height:1em; color: @cor-nav-titulos }
+        nav h2 { border-top:3px solid @cor-nav-titulos; padding:12px 5px 5px 10px; height:32px; background:@cor-cinza-claro; text-transform:uppercase; font-size:0.85em; line-height:1em; color: @cor-nav-titulos }
         nav ul { display:block; margin:0; border-top:1px solid @cor-cinza-medio }
         nav li { display:block; padding:5px 10px 5px 20px; border-bottom:1px solid @cor-cinza-medio; }
         /*nav li.active,*/ nav li.deeper {

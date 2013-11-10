@@ -20,7 +20,9 @@
 	<!--[if lt IE 10]><link rel="stylesheet" href="css/ie.css" /><![endif]-->
 	<!--[if lt IE 9]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	<!--[if lt IE 8]><link rel="stylesheet" href="css/ie7.css" /><link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css'>
+	<!-- chamada de fontes local --><!-- <link rel="stylesheet" href="css/fontes.css" type='text/css'/>		 -->
+	<!-- chamada de fontes externas --><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="jplayer/skin/portalpadrao01/jplayer.css" type='text/css'/>	
 </head>
 <body>
 	<a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
@@ -38,7 +40,7 @@
     <div class="layout">
     	<header>
     		<div class="container"> 
-	    		<div class="row-fluid">    			   			
+	    		<div class="row-fluid accessibility-language-actions-container">    			   			
 					<div class="span6 accessibility-container">
 						<ul id="accessibility">
 							<li>
@@ -80,7 +82,7 @@
 						</ul>	 -->				
 						<ul id="portal-siteactions" class="pull-right">
 							<li>
-								<a accesskey="5" href="acessibilidade.html">Acessibilidade</a>
+								<a accesskey="5" href="interna-acessibilidade.html">Acessibilidade</a>
 							</li>
 							<li>
 								<a accesskey="6" href="#" class="toggle-contraste">Alto Contraste</a>
@@ -95,7 +97,8 @@
 				<!-- fim .row-fluid -->
 				<div class="row-fluid">
 					<div id="logo" class="span8">
-						<a href="index.html" title="Descrição do Portal Padrão">
+					<!-- <div id="logo" class="span8 big"> <div id="logo" class="span8 small"> -->
+						<a href="index.html" title="Descrição do Portal Padrão">							
 							<span class="portal-title-1">Denominação do órgão</span>
 							<h1 class="portal-title corto">Nome principal</h1>
 							<span class="portal-description">Subordinação</span>
@@ -147,7 +150,7 @@
 						<h2 class="hide">Serviços</h2>
 						<ul>
 							<li class="portalservicos-item">
-								<a title="Perguntas frequentes" href="#">Perguntas frequentes</a>
+								<a title="Perguntas frequentes" href="interna-perguntas-frequentes.html">Perguntas frequentes</a>
 							</li>
 							<li class="portalservicos-item">
 								<a title="Contato" href="#">Contato</a>
@@ -205,7 +208,7 @@
 							<nav class="menu-de-apoio span9">
 								<h2 class="hide">Temas relevantes</h2>
 								<ul>
-									<li><a href="#" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>									
+									<li><a href="interna-de-noticias.html" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>									
 								</ul>							
 							</nav>
 							<nav class="span9 assuntos">
@@ -256,8 +259,9 @@
 									<li><a href="#" title="Despesas">Despesas</a></li>								
 									<li><a href="#" title="Licitações e Contratos">Licitações e Contratos</a></li>							
 									<li><a href="#" title="Servidores">Servidores</a></li>								
-									<li><a href="#" title="Informações classificadas">Informações classificadas</a></li>
+									<li><a href="interna-informacoes-classificadas.html" title="Informações classificadas">Informações classificadas</a></li>
 									<li><a href="#" title="Serviço de Informação ao Cidadão - SIC">Serviço de Informação ao Cidadão - SIC</a></li>
+									<li><a href="interna-perguntas-frequentes.html" title="Perguntas frequentes">Perguntas frequentes</a></li>
 								</ul>
 							</nav>	
 							<nav class="span9 central-conteudos">
@@ -370,7 +374,43 @@
 									<div class="outstanding-header">
 										<h2 class="outstanding-title">Áudio do órgão</h2>
 									</div>
-									<img src="images/fake-player-audio.png" alt="Player ainda será desenvolvido ou adaptado.">
+									<!-- inicio jplayer -->
+									<div class="jp-audio-slim">
+										<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+										<div id="jp_container_1" class="jp-audio">
+											<div class="jp-type-single">
+												<div class="jp-gui jp-interface">
+													<ul class="jp-controls">
+														<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+														<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+														<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+														<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+														<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+														<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+													</ul>
+													<div class="jp-progress">
+														<div class="jp-seek-bar">
+															<div class="jp-play-bar"></div>
+														</div>
+													</div>
+													<div class="jp-volume-bar">
+														<div class="jp-volume-bar-value"></div>
+													</div>
+													<div class="jp-time-holder">
+														<div class="jp-current-time"></div>
+														<div class="jp-duration"></div>
+
+														
+													</div>
+												</div>
+												<div class="jp-no-solution">
+													<span>Necessário plugin</span>
+													Para habilitar o áudio, é necessário que você tenha instalado em seu computador o <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- fim jplayer -->
 									<p>Espaço para inserir a legenda do áudio 1</p>
 									<div class="outstanding-footer">
 										<a href="#" class="outstanding-link">
@@ -413,7 +453,7 @@
 										</li>
 									</ul>
 									<div class="footer">
-										<a href="#" class="link">Acesse a lista completa</a>
+										<a href="interna-ultimas-noticias.html" class="link">Acesse a lista completa</a>
 									</div>									
 								</div>
 								<!-- fim .span8 .module -->
@@ -427,7 +467,7 @@
 									</div>
 									<div class="pane">
 										<div class="twitter-content">
-								            <a height="350" data-widget-id="388035310119964672" href="https://twitter.com/Portal%20Brasil" class="twitter-timeline"><br />Tweets do Portal Brasil</a>
+								            <a data-widget-id="388035310119964672" href="https://twitter.com/Portal%20Brasil" class="twitter-timeline"><br />Tweets do Portal Brasil</a>
 								            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><noscript>
 								                <div class="error">
 								                  <p>Javascript desativado.</p>
@@ -504,7 +544,7 @@
 									        </div>
 									      </div>
 									      <a data-slide="prev" href="#gallery-carousel" class="left carousel-control"><i class="icon-angle-left"></i><span class="hide">Mover foto esquerda</span></a>
-									      <!-- separador para fins de acessibilidade <--><span class="hide">&nbsp;</span></--><!-- fim separador para fins de acessibilidade -->
+									      <!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
 									      <a data-slide="next" href="#gallery-carousel" class="right carousel-control"><i class="icon-angle-right"></i><span class="hide">Mover foto esquerda</span></a>
 									    </div>
 										<!-- fim galeria -->
@@ -642,7 +682,7 @@
 			<div class="footer-logos">
 				<div class="container">
 					<a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="images/acesso-a-informacao.png" alt="Acesso a Informação"></a>
-					<!-- separador para fins de acessibilidade <--><span class="hide">&nbsp;</span></--><!-- fim separador para fins de acessibilidade -->
+					<!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
 					<a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="images/brasil.png" alt="Brasil - Governo Federal"></a>
 				</div>				
 			</div>
@@ -666,6 +706,15 @@
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 	<script src="js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 	<script src="js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script src="jplayer/js/jquery.jplayer.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function(){
+		urls = {mp3:"http://tv1-lnx-04.grupotv1.com/portalmodelo/conteudos-de-marcacao/audio-1-titulo-do-audio-1/audio-1-nome-do-audio.mp3"};	
+		playAudio("#jquery_jplayer_1", urls, "mp3", "jplayer/");
+	});
+	//]]>
+	</script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 	<!-- Script do portal Brasil deve ficar preferencialmente no rodape para nao atrasar o carregamento da pagina principal -->
 	<script src="http://barra.brasil.gov.br/barra.js?cor=verde" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
 </body>
