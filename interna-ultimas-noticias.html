@@ -171,34 +171,15 @@
 			<!-- fim .sobre -->			
     	</header>
 		<main> 
-    		<div class="container container-interno ">
+    		<div class="container">
 				<div class="row-fluid">
-					
-						 
-						<span id="breadcrumbs-current"><a href="#">Página inicial</a> > <a href="#">Conteúdos de Marcação</a> > Últimas notícias</span>
-						
-
-						<!-- class="duas-linhas" -->
-					<!-- 	<h2 class="span2"><span>Em Destaque</span></h2>
-						<ul class="span10 n5">    						
-							<li>
-								<a href="index.html" title="">Padrão na cor verde</a>
-							</li>
-							<li>
-								<a href="index-amarelo.html" title="">Padrão na cor amarelo</a>
-							</li>
-							<li>
-								<a href="index-azul.html" title="">Padrão na cor azul</a>
-							</li>
-							<li>
-								<a href="index-branco.html" title="">Padrão na cor branco</a>
-							</li>
-							<li>
-								<a href="index-estrutura-c.html" title="">Estrutura em C</a>
-							</li>							
-						</ul>	 -->
-						<!-- <li class="ajuste-duas-linhas">Destaque 5</li> -->						
-					
+					<section class="rastro-navegacao">
+						<div class="rastro-navegacao row-flutuante">
+							<a class="pathway" href="index.html">Página inicial</a>
+							<span class="separator"> &gt; </span>
+							<span>Últimas notícias</span>
+						</div>
+					</section>						
 				</div>
 				<!-- fim .row-fluid -->
 				<div class="row-fluid">
@@ -209,7 +190,7 @@
 							<nav class="menu-de-apoio span9">
 								<h2 class="hide">Temas relevantes</h2>
 								<ul>
-									<li>Conheça a identidade digital do governo</li>									
+									<li><a href="#" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>
 								</ul>							
 							</nav>
 							<nav class="span9 assuntos">
@@ -218,30 +199,7 @@
 									<li><a href="#" title="Editoria A">Editoria A</a></li>
 									<li><a href="#" title="Editoria B">Editoria B</a></li>
 									<li><a href="#" title="Editoria C">Editoria C</a></li>								
-									<li class="deeper parent"><a href="#" title="Editoria D">Editoria D</a>
-										<ul>
-											<li class="deeper parent"><a href="#">Subnível 1 - link 1</a>
-												<ul>
-													<li><a href="#">Subnível 2 - link 1</a></li>
-													<li class="deeper parent"><a href="#">Subnível 2 - link 2</a>
-														<ul>
-															<li class="deeper parent"><a href="#">Subnível 3 - link 1</a>
-																<ul>
-																	<li class="current"><a href="#">Subnível 4 - link 1</a></li>
-																	<li><a href="#">Subnível 4 - link 2</a></li>
-																</ul>
-															</li>
-															<li><a href="#">Subnível 3 - link 2</a></li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li><a href="#">Subnível 1 - link 2</a></li>
-											<li><a href="#">Subnível 1 - link 3</a></li>
-											<li><a href="#">Subnível 1 - link 4</a></li>
-											<li><a href="#">Subnível 1 - link 5</a></li>
-										</ul>
-									</li>								
+									<li><a href="#" title="Editoria D">Editoria D</a></li>								
 									<li><a href="#" title="Editoria E">Editoria E</a></li>								
 									<li><a href="#" title="Editoria F">Editoria F</a></li>								
 									<li><a href="#" title="Editoria G">Editoria G</a></li>								
@@ -323,128 +281,467 @@
 						</section>					
 					</div>
 					<!-- fim #navigation.span3 -->
-					<div id="content" class="span9">
+					<div id="content" class="internas span9">
 						<section id="content-section">							
 							<span class="hide">Início do conteúdo da página</span>
+							<!--  		CONTEUDO   	---------- -->
+							<h1 class="borderHeading">
+								Últimas notícias
+							</h1>		
+							<div class="content-header-options-1 row-fluid">
+								<div class="documentByLine">
+									<span class="documentAuthor">por <strong>Portal padrão</strong></span>
+									<span class="separator">|</span>
+									<span class="documentPublished"><strong>publicado</strong> 22/07/2013 09h56</span>
+									<span class="separator">|</span>
+									<span class="documentModified"><strong>última modificação</strong> 10/10/2013 10h33</span>
+								</div>
+							</div>
+							<div class="tile-list-1">
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Release 5: Título do release entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
+								
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Texto 1 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-<!--  		CONTEUDO   	---------- -->
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Release 1 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Release 2 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-<div class="row-fluid module">
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Release 3 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Release 4 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-<section class="module-section">
-	<div class="span12 no-margin">    								
-<h1 class="h1interna-linha">
-    Últimas notícias
-</h1>
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Texto 2 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-<div class="span12 no-margin texto-internas">
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<div class="tileImage">
+											<a href="#">											
+												<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
+											</a>
+										</div>
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Texto 3 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-<div id="content">                     
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Texto 4 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-	<div id="viewlet-above-content-title"></div>
-	                                
-	<div id="viewlet-below-content-title">
-		<div class="documentByLine" id="document-byline">  
-			<span class="documentAuthor">
-			  por <span>Fernando Souza</span> —
-			</span>
-			  
-			<span class="documentPublished">
-				<span>publicado</span>
-				08/08/2013 16h37,
-			</span>
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<span class="subtitle">Chapéu da editoria</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Texto 5 - Título da notícia entre 35 e 90 caracteres</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Notícia</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Texto de marcação</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-			<span class="documentModified">
-				<span>última modificação</span>
-				10/10/2013
-				<br>18h08
-			</span>
-		</div>
-	</div>
+								<div class="tileItem">
+									<div class="span10 tileContent">										
+										<h2 class="tileHeadline">
+                                      		<a href="interna-de-noticias.html">Conheça o novo modelo de plataforma digital do governo federal</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Estrutura reúne o que há de mais adequado em soluções digitais de acessibilidade e de divulgação de informações nos mais variados formatos; conheça todos os detalhes deste novo modelo
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Identidade visual</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Secom</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal Padrão</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-	<div id="viewlet-above-content-body"></div>
-    
-    <div id="content-core">
+								<div class="tileItem">
+									<div class="span10 tileContent">
+										<span class="subtitle">Legislação</span>
+										<h2 class="tileHeadline">
+                                      		<a href="#">Saiba como montar o menu da Lei de Acesso à Informação</a>
+                                  		</h2>
+                                  		<span class="description">
+                                  			Órgãos do governo federal devem disponibilizar em seu site um menu especificado pela LAI
+                                  		</span> 
+                                  		<span class="keywords">
+		                                      Tags:
+		                                      <span>
+		                                          <a rel="tag" href="#">Portal padrão</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">LAI</a>,
+		                                      </span>
+		                                      <span>
+		                                          <a rel="tag" href="#">Lei de acesso à informação</a>
+		                                      </span>
+		                                  </span>
+									</div>
+									<div class="span2 tileInfo">
+										<ul>
+											<li class="hide">por Portal Padrão</li>
+											<li class="hide">publicado</li>
+											<li><i class="icon-fixed-width icon-calendar"></i> 08/08/2013</li>
+											<li><i class="icon-fixed-width icon-time"></i> 12h52</li>
+											<li><i class="icon-fixed-width"></i> Artigo</li>
+										</ul>							            								
+									</div>									
+								</div>
+								<!-- div.tileItem -->
 
-	    <div class="tileItem visualIEFloatFix tile-collective-nitf-content">
-	        <div class="tileContent">
-				<a href="#">
-					<div class="tileImage">
-					<img src="images/msg-interna.jpg" alt="Imagem notícia horizontal tamanho 664" title="Imagem notícia horizontal tamanho 664" height="86" width="128" class="tileImage">
-					</div>
-				</a>
-
-				<span class="subtitle">Chapéu da editoria</span>
-
-				<h2 class="tileHeadline">
-				<a href="#" class="summary url">Release 1: Título do release entre 35 e 90 caracteres</a>
-				</h2>
-
-				<p>
-				<span class="description">Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres</span>
-				</p>
-
-				<div class="keywords">
-					Tags:
-					<span><a href="#" class="link-category" rel="tag">Notícia</a>,</span>
-					<span><a href="#" class="link-category" rel="tag">Texto de marcação</a>,</span>
-					<span><a href="#" class="link-category" rel="tag">Portal Padrão</a></span>
-				</div>
-	        </div>
-
-	        <span class="documentByLine">                
-	            <span class="hiddenStructure">por <a href="#">Portal Padrão</a></span>
-	            <span class="hiddenStructure">publicado</span>
-	            <span class="summary-view-icon"><i class="icon-day"></i>08/08/2013</span>
-	            <span class="summary-view-icon"><i class="icon-hour"></i>12h52</span>
-	            <span class="summary-view-icon"><i class="icon-news article"></i>Artigo</span>
-				<span class="visualClear"></span>
-			</span>
-		</div>
-
-
-		<div class="tileItem visualIEFloatFix tile-collective-nitf-content">
-	        <div class="tileContent">
-				<span class="subtitle">Chapéu da editoria</span>
-
-				<h2 class="tileHeadline">
-				<a href="#" class="summary url">Texto 1: Título do release entre 35 e 90 caracteres</a>
-				</h2>
-
-				<p>
-				<span class="description">Subtítulo do texto 1. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres</span>
-				</p>
-
-				<div class="keywords">
-					Tags:
-					<span><a href="#" class="link-category" rel="tag">Notícia</a>,</span>
-					<span><a href="#" class="link-category" rel="tag">Texto de marcação</a>,</span>
-					<span><a href="#" class="link-category" rel="tag">Portal Padrão</a></span>
-				</div>
-	        </div>
-
-	        <span class="documentByLine">                
-	            <span class="hiddenStructure">por <a href="#">Portal Padrão</a></span>
-	            <span class="hiddenStructure">publicado</span>
-	            <span class="summary-view-icon"><i class="icon-day"></i>08/08/2013</span>
-	            <span class="summary-view-icon"><i class="icon-hour"></i>12h52</span>
-	            <span class="summary-view-icon"><i class="icon-news article"></i>Artigo</span>
-				<span class="visualClear"></span>
-			</span>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-<!--  		CONTEUDO  FINAL      	---------- -->
-
+							</div>
+							<!--  		CONTEUDO  FINAL      	---------- -->
 							<span class="hide">Fim do conteúdo da página</span>							
 						</section>
 					</div>
