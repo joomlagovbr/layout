@@ -173,3 +173,44 @@ function delaySocialItems()
 	}
 }
 //fim aparecimento de icones de redes sociais, paginas internas
+
+//funcao de controle de player de audio
+function playAudio(element, urls, formats, basePath)
+{
+	var audio  = document.createElement("audio"),
+	canPlayMP3 = (typeof audio.canPlayType === "function" && audio.canPlayType("audio/mpeg") !== "");	
+
+	if(formats.indexOf('mp3')!=-1 && !canPlayMP3)
+	{
+		jQuery(element).jPlayer({
+			ready: function (event) {
+				jQuery(this).jPlayer("setMedia", urls);
+			},
+			swfPath: basePath+"js/Jplayer.swf",
+			supplied: formats,
+			wmode: "window",
+			solution:"flash",
+			smoothPlayBar: true,
+			keyEnabled: true,
+			oggSupport: false,
+			nativeSupport: false,
+			preload:"none"
+		});
+	}
+	else
+	{
+
+		jQuery(element).jPlayer({
+			ready: function (event) {
+				jQuery(this).jPlayer("setMedia", urls);
+			},
+			swfPath: "js",
+			supplied: formats,
+			wmode: "window",
+			smoothPlayBar: true,
+			keyEnabled: true,
+			preload:"none"
+		});
+	}
+}
+//fim funcao de controle de player de audio
