@@ -45,6 +45,7 @@
 .chrome_antialising (@color: #FFF; @stroke:.7px) {
    -webkit-text-stroke-width: @stroke; -webkit-text-stroke-color:@color; -webkit-font-smoothing:antialiased; 
 }
+.opacity( @level:100 ) { opacity:(@level/100); -moz-opacity:(@level/100); filter: alpha(opacity=@level); }
 .debug() { border:1px solid red }
 .m_hide() { display:none !important; }
 .fleft() { float:left }

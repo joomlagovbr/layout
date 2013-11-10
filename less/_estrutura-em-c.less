@@ -2,6 +2,7 @@ header {
     .header-main-gradient(@cor-principal, @cor-gradiente-header-1, @cor-gradiente-header-2);
      @line-height:5px;
     padding: 14px 0 0 0;
+    .accessibility-language-actions-container { height:25px; overflow: hidden }
     #accessibility{       
         font-family: @basic-font-family !important; margin:0; line-height:@line-height;
         li { line-height:@line-height; margin:0 10px 0 0 }
@@ -30,13 +31,22 @@ header {
         li.language-en a { background:transparent url('../img/flag-en.gif') no-repeat 0 center;  }
         li.language-es a { background:transparent url('../img/flag-es.gif') no-repeat 0 center; }
     }
-    #logo { 
+    #logo {
+        margin:3px 0 20px 0; 
         a { color:@cor-titulo-principal }
         .portal-title-1 { font-size:0.85em; display:block; height:21px; }
         h1 {
             font-family: @font-family; font-size:2.9em; line-height:0.8em; font-weight:800; letter-spacing:-1px; margin-bottom:5px;
         }
-        .portal-description { font-size:0.95em; text-transform:uppercase; position:relative; top:4px }
+        .portal-description { font-size:1.1em; text-transform:uppercase; position:relative; top:4px }
+    }
+    #logo.small {
+        margin:13px 0 10px 0; 
+        h1 { font-size:2.4em }
+    }
+    #logo.big {
+        margin:10px 0 13px 0; 
+        h1 { font-size:3.6em }        
     }
     #portal-searchbox {
         form { margin:22px 0 0 0 }
@@ -47,10 +57,10 @@ header {
         .searchButton { padding-bottom:4px; padding-right:8px; }
         .searchButton i.icon-search { font-size:1.25em; color:@cor-iconsearch-header; .chrome_antialising (@cor-iconsearch-header; .4px ) }
     }
-    #social-icons { margin:5px 0 5px 0;
+    #social-icons { margin:2px 0 2px 0; .opacity(80);
         li { margin: 0 0 0 6px }
         a { color:@cor-links-header;
-            i { font-size:1.75em; margin-top:5px; .chrome_antialising (@cor-links-header; .4px ) } 
+            i { font-size:1.70em; margin-top:5px; .chrome_antialising (@cor-links-header; .4px ) } 
             i.icon-youtube {  .chrome_antialising (@cor-links-header-hover; 0 ) !important }
             &:hover { color:@cor-links-header-hover; .chrome_antialising (@cor-links-header-hover; .4px ) }
         }

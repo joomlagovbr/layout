@@ -199,7 +199,6 @@ function playAudio(element, urls, formats, basePath)
 	}
 	else
 	{
-
 		jQuery(element).jPlayer({
 			ready: function (event) {
 				jQuery(this).jPlayer("setMedia", urls);
