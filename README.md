@@ -7,5 +7,3 @@ Observações:
 --------------------------
 - Rafael Berlanda, https://github.com/berlanda
 - Lucas Cosso, https://github.com/Cosso
-- Bruno Moraes, https://github.com/programadorbruno
-- Evandro Saraiva, saraiva.evandro@gmail.com 
